@@ -2,6 +2,9 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
-    # Your code goes here
-    return frequencies
+   frequencies = {}
+   for key in items:
+    values = str(items)
+    total = values.count(str(key))
+    frequencies.update({str(key) : total})
+   return frequencies
